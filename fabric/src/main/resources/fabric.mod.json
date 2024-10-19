@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "uk.cake.cpp.fabric.ExampleModFabric"
     ]
   },
   "mixins": [

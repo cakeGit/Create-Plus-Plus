@@ -1,8 +1,8 @@
-package net.examplemod;
+package uk.cake.cpp;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 
-public class ExampleExpectPlatform {
+public class CppExpectPlatform {
     /**
      * an example of {@link ExpectPlatform}.
      * <p>

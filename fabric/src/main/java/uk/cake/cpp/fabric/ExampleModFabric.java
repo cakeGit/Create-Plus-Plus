@@ -1,19 +1,19 @@
-package net.examplemod.fabric;
+package uk.cake.cpp.fabric;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
-import net.examplemod.ExampleBlocks;
-import net.examplemod.ExampleMod;
+import uk.cake.cpp.CreatePlusPlusRegistry;
+import uk.cake.cpp.CreatePlusPlus;
 import net.fabricmc.api.ModInitializer;
 
 public class ExampleModFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        ExampleMod.init();
-        ExampleMod.LOGGER.info(EnvExecutor.unsafeRunForDist(
+        CreatePlusPlus.init();
+        CreatePlusPlus.LOGGER.info(EnvExecutor.unsafeRunForDist(
                 () -> () -> "{} is accessing Porting Lib on a Fabric client!",
                 () -> () -> "{} is accessing Porting Lib on a Fabric server!"
-                ), ExampleMod.NAME);
+                ), CreatePlusPlus.NAME);
         // on fabric, Registrates must be explicitly finalized and registered.
-        ExampleBlocks.REGISTRATE.register();
+        CreatePlusPlusRegistry.REGISTRATE.register();
     }
 }

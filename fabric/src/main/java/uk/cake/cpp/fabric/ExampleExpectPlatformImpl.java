@@ -1,4 +1,4 @@
-package net.examplemod.fabric;
+package uk.cake.cpp.fabric;
 
 import net.fabricmc.loader.api.FabricLoader;
 
